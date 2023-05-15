@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Planuri - Roba Andrei</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">"
+<body>
+   
+ <div class="container">
+   <div class="navbar">
+     <div class="logo">
+       <img src="">
+     </div>
+     <nav>
+          <ul id="MenuItems">
+              <li><a href="">Acasa</a></li>
+              <li><a href="">Planuri</a></li>
+              <li><a href="">Despre mine</a></li>
+              <li><a href="">Recenzii</a></li>
+              <li><a href="">Cont</a></li>
+          </ul>
+     </nav>
+     <img src="static/cart.png" width="30px" height="30px">
+     <img src="static/menu.png" class="menu-icon" onclick="menutoggle()">
+   </div>
+ 
+   </div>
+  
+ <!--------------detalii individuale plan----------->
+
+ <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+          <img src="" width="100%" id="product-img">
+                  <div class="small-img-row">
+                  <div class="small-img-col">
+                      <img src="" width="100%" class="small-img">
+                   </div>
+                   <div class="small-img-col">
+                      <img src="" width="100%" class="small-img">
+                  </div>
+                  <div class="small-img-col">
+                      <img src="" width="100%" class="small-img">
+                  </div>
+                  <div class="small-img-col">
+                      <img src="" width="100%" class="small-img">
+                  </div>
+           </div>
+
+
+        </div>
+        <div class="col-2">
+            <p>Acasa/Plan antrenament incepator</p>
+            <h1>Plan antrenament full body</h1>
+            <h4>99.00 ron</h4>
+            <select>
+              <option>Acasa</option>
+              <option>La sala</option>
+            </select>
+            <a href="" class="btn">Add to Cart</a>
+
+            <h3>Detalii Plan</h3>
+            <p>4 variatii de antrenamente full body pentru incepatori</p>
+        </div>
+    </div>
+</div>
+
+<!--------------title------------->
+ 
+<div class="small-container">
+      <div class="row row-2">
+          <h1> </h1>
+           <p>Vezi mai multe</p>
+      </div>
+</div>
+
+</div>
+<div class="small-container">
+ <h2 class="title">Tipuri planuri</h2>
+ <div class="row">
+    <div class="col-4">
+       <img src="img.jpg">
+       <h4>Plan antrenament incepator</h4>
+       <p>99.90 ron</p>
+    </div>
+    <div class="col-4">
+       <img src="img.jpg">
+       <h4>Plan antrenament intermediar</h4>
+       <p>99.90 ron</p>
+    </div>
+    <div class="col-4">
+       <img src="img.jpg">
+       <h4>Plan antrenament avansat</h4>
+       <p>99.90 ron</p>
+    </div>
+ </div>
+ 
+
+<div class="footer">
+  <div class="container">
+      <div class="row">
+           <div class="foooter-col-1">
+              <h3>Downloadati-va aplicatia mea</h3>
+              <div class="app-logo">
+                  <img src="appstore.png">
+                  <img src="android.png">
+              </div>
+           </div>
+           <div class="footer-col-2">
+             <img src="img.png">
+             <p>Scopul meu este sa va ofer corpul ideal!</p>
+           </div>
+           <div class="footer-col-3">
+             <li>Blog</li>
+             <li>Contact</li>
+           </div>
+           <div class="footer-col-4">
+            <h3>Follow</h3>
+             <li>Instagram</li>
+             <li>Tiktok</li>
+             <li>facebook</li>
+           </div>
+      </div>
+
+
+     <hr>
+     <p class="copyright">Copyright 2023 - Roba Andrei</p>
+  </div>
+
+</div>
+<!-------------js for toggle menu-------------->
+ <script>
+ var MenuItems = document.getElementById("MenuItems");
+ MenuItems.style.maxHeight = "0px";
+ function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+      {
+          MenuItems.style.maxHeight = "200px";
+      }
+      else
+      {
+       MenuItems.style.maxHeight = "0px";
+      }
+ }
+ </script>
+
+
+<!---------js for  product gallery--------->
+
+<script>
+
+var ProductImg = document.getElementById("ProductImg");
+var SmallImg = document.getElementsByClassName("small-img");
+
+SmallImg[0].onclick = function()
+{
+   ProductImg.src = SmallImg[0].src;
+}
+SmallImg[1].onclick = function()
+{
+   ProductImg.src = SmallImg[1].src;
+}
+SmallImg[2].onclick = function()
+{
+   ProductImg.src = SmallImg[2].src;
+}
+SmallImg[3].onclick = function()
+{
+   ProductImg.src = SmallImg[3].src;
+}
+
+
+
+</script>
+  
+
+</body>
+</html>
